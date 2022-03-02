@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>學生嘉獎兌換系統</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/exchange.css" />
+</head>
+
+<body>
+    <header>
+        <h1>學生嘉獎兌換系統</h1>
+        <div id="user-profile">
+            <button type="button" class="btn btn-warning btn-lg login">
+          Connect Wallet
+        </button>
+        </div>
+    </header>
+
+    <div id="swap-interface">
+        <form id="swap-box">
+            <div class="input-group bottom">
+                <input type="number" class="form-control" id="output" placeholder="0.00" disabled aria-label="Text input with dropdown button" aria-describedby="eth-addon" />
+                <button class="btn btn-outline-secondary selectToken" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    請選擇種類
+                </button>
+                <ul class="dropdown-menu w-30">
+                    <li>
+                        <a class="dropdown-item">&nbsp;嘉獎</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item">&nbsp;小功</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item">&nbsp;大功</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="arrow-box">
+                <h2>↓</h2>
+            </div>
+            <div class="input-group top">
+                <input type="number" class="form-control" id="input" aria-describedby="eth-addon" placeholder="0.00" autoComplete="off" autoCorrect="off" required />
+                <span class="input-group-text" id="eth-addon">
+                    &emsp;&nbsp;&nbsp;點數
+                </span>
+            </div>
+            <div id="rate-box">
+                <span class="rate text">比值</span>
+                <span class="rate value">
+            1 <span id="top-text">嘉獎</span> = <span id="rate-value">???</span><span id="bottom-text"> 點數</span>
+                </span>
+            </div>
+            <button type="submit" class="btn btn-primary swap disabled">
+          兌換
+        </button>
+        </form>
+    </div>
+
+    <footer>
+    </footer>
+</body>
+<script src="app.js"></script>
+<script src="component.js"></script>
+
+</html>
