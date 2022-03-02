@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>學生獎勵兌換系統-註冊</title>
+    <style>
+        a {
+            text-align: center;
+            color: white;
+            padding: 4px 8px;
+            text-decoration: none;
+            background-color: black;
+        }
+        
+        a:hover {
+            background-color: darkorange;
+        }
+        
+        .btn {
+            color: white;
+            background-color: black;
+            width: 50px;
+            height: 27px;
+        }
+        
+        .btn:hover {
+            background-color: darkorange;
+        }
+    </style>
+</head>
+
+<body style="background-color: gray;">
+    <form action="signup.php" method="post">
+        <center>
+            <p id="image_logo"><img src="npust-log.png" width="250"></p>
+            <h3>註 冊</h3>
+            <b>
+                <!-- <p>帳 號：<input type="text" name="name"></p>
+                <p>密 碼：<input type="text" name="password"></p> -->
+                <p>帳號(學號)：<input type="text" name="sNum"></p>
+                <p>密碼(身分證)：<input type="text" name="sId"></p>
+                <p>姓名：<input type="text" name="sName"></p>
+                <p>系級：<input type="text" name="department"></p>
+                <p>手機：<input type="text" name="phone"></p>
+                <p>信箱：<input type="text" name="eMail"></p>
+
+            </b>
+            <p><a href="login.html" target="_self">返回登入</a>&emsp;&emsp;&emsp;<input type="submit" name="submit" value="確定" class="btn"></p>
+        </center>
+    </form>
+</body>
+
+</html>
